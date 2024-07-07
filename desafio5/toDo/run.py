@@ -1,6 +1,9 @@
+from model import Destino
+
 while (True):
-    destino = None
 
     destino_da_viajem = input('Selecione o destino da viajem: ')
 
-    print()
+    destino = Destino(destino_da_viajem)
+
+    print(f'{destino.mostrar_dados()}\n')
